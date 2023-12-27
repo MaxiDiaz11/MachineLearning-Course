@@ -11,11 +11,11 @@ import pandas as pd
 # Importar el data set
 dataset = pd.read_csv('Data.csv')
 
-# variables dependientes X
+# variables independientes X
 # [:, :-1] -> todas las filas, todas las columnas menos la ultima
 x = dataset.iloc[:, :-1].values
 
-# variables independientes Y
+# variables dependientes Y
 y = dataset.iloc[:, 3].values  # [:, 3] -> todas las filas, columna 3
 
 # Tratamiento de los NAs
